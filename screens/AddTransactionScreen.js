@@ -38,7 +38,7 @@ const AddTransactionScreen = ({ navigation }) => {
       type,
       category,
     });
-    navigation.goBack(); // Go back to the dashboard
+    navigation.goBack();
   };
 
   return (
@@ -95,7 +95,7 @@ const AddTransactionScreen = ({ navigation }) => {
         selectedValue={category} 
         style={styles.dropdown}
         onValueChange={(itemValue) => {
-          console.log("Selected Category:", itemValue); // Debugging
+          console.log("Selected Category:", itemValue); 
           setCategory(itemValue)}}
       >
         <Picker.Item label="Category" value="Category" />

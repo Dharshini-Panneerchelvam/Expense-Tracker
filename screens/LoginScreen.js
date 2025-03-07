@@ -21,7 +21,7 @@ const LoginScreen = ({ navigation }) => {
     }
   };
 
-    // Clear error message when user starts typing
+
     const clearError = () => {
       if (error) setError('');
     };

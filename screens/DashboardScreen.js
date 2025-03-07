@@ -3,13 +3,13 @@ import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import { AuthContext } from '../context/AuthContext';
 import { TransactionContext } from '../context/TransactionContext';
 import { styles } from '../styles';
-import Icon from 'react-native-vector-icons/FontAwesome';  // Importing the icon library
+import Icon from 'react-native-vector-icons/FontAwesome'; 
 
 const DashboardScreen = ({ navigation }) => {
   const { logout } = useContext(AuthContext);
   const { transactions } = useContext(TransactionContext);
 
-  // Set up the custom header with Logout icon
+
   useLayoutEffect(() => {
     navigation.setOptions({
       title: 'Dashboard',

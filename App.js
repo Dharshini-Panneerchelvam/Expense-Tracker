@@ -18,9 +18,9 @@ export default function App() {
         <Stack.Navigator
           screenOptions={{
             headerStyle: {
-              backgroundColor: '#3f6f79', // Set the background color of the header title
+              backgroundColor: '#3f6f79',
             },
-            headerTintColor: '#fff', // Set the color of the title text
+            headerTintColor: '#fff',
           }}
         >
             <Stack.Screen name="Login" component={LoginScreen} />
